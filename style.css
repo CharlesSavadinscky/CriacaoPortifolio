@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Domine', serif;
+}
+
+body{
+    background-color: rgb(23, 23, 23);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+hr{
+    margin: 40px;
+    color: white;
+
+}
+
+/* Cabeçalho */
+
+header{
+    padding: 20px 2%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+    display: inline-block;
+    transition: .4s;
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.menu2{
+    display: flex;
+    align-items: center;
+    text-align: center;
+} 
+
+.menuItem{
+    position: relative;
+    border-top: unset;
+}
+
+header{
+    background-color: black;
+}
+
+footer{
+    background-color: black;
+    padding: 30px 4%;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* Inicio */
+
+.txtInicial p{
+    color: white;
+    margin: 30px 0;
+}
+
+.txtInicial h1{
+    font-size: 25px;
+    color: white;
+}
+
+section.topoSite{
+    padding: 40px 4%;
+}
+
+section.topoSite .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+/* Dados pessoais */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+}
+
+.sobre .txtDP{
+    color: white;
+}
+
+.txtDP h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.txtDP p{
+    margin: 20px 0;
+}
+
+.sobre .txtDP .btnSocial button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: lime;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.sobre .txtDP .btnSocial button:hover{
+    box-shadow: 0px 0px 8px rgb(0, 120, 0);
+    transform: scale(1.05);
+    transition: .4s;
+}
+
+/* objetico proficional */
+
+section .objetivoProficional{
+    padding: 40px 4%;
+}
+
+section.objetivoProficional .flex{
+    align-items: center;
+    gap: 60px;
+
+}
+
+.objetivoProficional .txtOP h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.txtOP p{
+    color: white;
+    margin: 15px 4%;
+    text-align: justify;
+}
+
+/* formação academica */
+
+section .formacaoAcademica{
+    padding: 40px 4%;
+}
+
+section .formacaoAcademica .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.formacaoAcademica .txtFA h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.formacaoAcademica .txtFA p{
+    color: white;
+    margin: 15px 4%;
+    text-align: justify;
+}
+
+/* exp Proficional */
+
+section .expProf{
+    padding: 40px 4%;
+}
+
+section .expProf .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.expProf .txtEP h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.expProf .txtEP p{
+    color: white;
+    margin: 15px 4%;
+    text-align: justify;
+}
+
+/* Cursos extracurriculares */
+
+section .curExt{
+    padding: 40px 4%;
+}
+
+section .curExt .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.curExt .txtCE h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.curExt .txtCE p{
+    color: white;
+    margin: 15px 4%;
+    display: inline-block;
+}
+
+/* atividade complementares */
+
+section .atComp{
+    padding: 40 4%;
+}
+
+.atComp .txtAC h2{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.atComp .txtAC p{
+    color: white;
+    margin: 15px 4%;
+}
